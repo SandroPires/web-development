@@ -55,7 +55,7 @@ A loop is a program structure that executes the same piece of code zero or more 
 
 Every time the code inside the loop executes, the expression is evaluated, if it is still true, the loop executes again, until the condition is false. Each execution of the loop is called an **iteration**.
 
-```javascript
+```0javascript
 var counter = 0;
 var sum = 0;
 
@@ -71,5 +71,26 @@ while (counter > 10) {
 // 3 - counter = 2 | sum = 10
 // ...
 // 10 - counter = 10 | sum = 50
+
 ```
+
+### Loop through array
+
+Example that shows how to print array values.
+
+```javascript
+var position = 0; 
+var shoppingCart = [
+  "Ball", 
+  "Bread", 
+  "Cheese", 
+  "Milk"
+];
+
+while (position < 4) {
+  console.log(shoppingCart[position])
+  position += 1
+}
+```
+
 
